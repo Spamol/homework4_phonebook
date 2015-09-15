@@ -1,0 +1,19 @@
+<div class="container contact-book">
+      <div class="row">
+        <div class="span12"><h3 class="title-contact-book text-center">Контакты</h3></div>
+        <div class="span2 offset1"><button class="btn add-phone" href="#">Добавить</button></div>
+          <div class="span2 offset6 text-right switch-grid">
+              <a href="#" class="list"></a>
+              <a href="#" class="grid active"></a>
+          </div>
+        <div class="span10 offset1 wrap-contact-book">
+            <div class="row phone-list">
+                <div class="span2 text-center" ng-repeat="elem in data">
+                    <img src="images/ava.jpg" class="img-rounded" alt="User"/>
+                    <p>{{elem.name}} {{elem.surname}}</p>
+                    <p ng-bind="elem.phone"></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>

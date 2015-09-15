@@ -1,0 +1,142 @@
+/* Шрифт */
+@font-face {
+  font-family: 'Segoe_UI';
+  src: url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.eot');
+  src: url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.eot?#iefix') format('embedded-opentype'), url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.woff') format('woff'), url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.ttf') format('truetype'), url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.svg#web') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Переменные */
+/* Миксины */
+/* Основные */
+html,
+body {
+  height: 100%;
+}
+body {
+  position: relative;
+  background: url("/images/bg.jpg") no-repeat center center;
+  background-size: 100% 100%;
+  font-family: "Segoe_UI", Arial;
+}
+.contact-book {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 470px;
+  /* Добавление контакта */
+}
+.contact-book .title-contact-book {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.contact-book .add-phone {
+  font-size: 12px;
+  background: #ece8eb;
+  width: 113px;
+  border: 1px solid #ccc;
+  margin-bottom: 18px;
+}
+.contact-book .switch-grid {
+  width: 160px;
+}
+.contact-book .switch-grid a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 27px;
+  width: 25px;
+  height: 25px;
+  background: url("/images/sprite-grid.png") no-repeat 0 0;
+  -webkit-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+.contact-book .switch-grid a.grid {
+  background-position: -55px 0;
+}
+.contact-book .switch-grid a:hover,
+.contact-book .switch-grid a.active {
+  background-position: 0 -25px;
+}
+.contact-book .switch-grid a.grid:hover,
+.contact-book .switch-grid a.grid.active {
+  background-position: -55px -25px;
+}
+.contact-book .back-contact-book {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  line-height: 26px;
+}
+.contact-book .wrap-contact-book {
+  background: #efebed;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  width: 798px;
+  /* Главная страница */
+}
+.contact-book .wrap-contact-book .left-contact-book {
+  padding: 37px 10px 76px;
+}
+.contact-book .wrap-contact-book .left-contact-book .btn {
+  font-size: 12px;
+  background: #ffffff;
+  width: 89px;
+  border: 1px solid #ccc;
+}
+.contact-book .wrap-contact-book .left-contact-book .btn.del {
+  margin-left: 20px;
+}
+.contact-book .wrap-contact-book .left-contact-book .ava-contact-book {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.contact-book .wrap-contact-book .left-contact-book .ava-contact-book a {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+.contact-book .wrap-contact-book .right-contact-book {
+  padding: 37px 10px 76px;
+}
+.contact-book .wrap-contact-book .right-contact-book .big-input {
+  width: 252px;
+  height: 26px;
+  margin-bottom: 7px;
+  font-size: 12px;
+}
+.contact-book .wrap-contact-book .right-contact-book .middle-input {
+  margin: 9px 0;
+}
+.contact-book .wrap-contact-book .right-contact-book .middle-input span {
+  width: 26px;
+}
+.contact-book .wrap-contact-book .right-contact-book .middle-input input {
+  width: 215px;
+  font-size: 12px;
+}
+.contact-book .wrap-contact-book .phone-list {
+  margin-left: -10px;
+  padding-top: 14px;
+  font-size: 12px;
+}
+.contact-book .wrap-contact-book .phone-list div {
+  margin-bottom: 5px;
+}
+.contact-book .wrap-contact-book .phone-list div img {
+  margin-bottom: 7px;
+}
+.contact-book .wrap-contact-book .phone-list div p {
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
